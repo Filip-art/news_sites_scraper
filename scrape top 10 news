@@ -22,9 +22,9 @@ for news in news_dict.items():
 
     print(message_to_send)
 
-    TOKEN = "5958077499:AAE8_CmslHs7altSCK6lk6ev9cU9I0F4OSM"
+    TOKEN = "YOUR TOKEN HERE"
 
-    chat_ID = "1663737094"
+    chat_ID = "YOUR CHAT ID HERE"
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={chat_ID}&text={message_to_send}"
 
     print(requests.get(url).json())
